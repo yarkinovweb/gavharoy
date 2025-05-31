@@ -186,7 +186,7 @@ async function showDetailModal(requestId) {
                       So'rov Tafsilotlari
                   </h2>
                   <button onclick="document.getElementById('modalContainer').innerHTML = ''" 
-                          class="text-black/60 hover:text-black text-xl hover:bg-black/20 rounded-lg p-2 transition-all">
+                          class="text-black/60 hover:text-black text-xl rounded-lg p-2 transition-all">
                       <i class="fas fa-times"></i>
                   </button>
               </div>
@@ -343,7 +343,7 @@ async function showUpdateModal(requestId) {
                       So'rovni Yakunlash
                   </h2>
                   <button onclick="document.getElementById('modalContainer').innerHTML = ''" 
-                          class="text-black/60 hover:text-black text-xl hover:bg-black/20 rounded-lg p-2 transition-all">
+                          class="text-black/60 hover:text-black text-xl rounded-lg p-2 transition-all">
                       <i class="fas fa-times"></i>
                   </button>
               </div>
@@ -357,7 +357,7 @@ async function showUpdateModal(requestId) {
                       </label>
                       <input type="number" id="price" name="price" required min="0" step="1000"
                              placeholder="Masalan: 150000"
-                             class="w-full p-3 bg-black/20 border border-black/20 rounded-lg text-black placeholder-black/40 focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                             class="w-full p-3 border border-black/20 rounded-lg text-black placeholder-black/40 focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                   </div>
 
                   <!-- Finish Time Input -->
@@ -367,7 +367,7 @@ async function showUpdateModal(requestId) {
                           Tugash Vaqti
                       </label>
                       <input type="datetime-local" id="finishedAt" name="finishedAt" required
-                             class="w-full p-3 bg-black/20 border border-black/20 rounded-lg text-black focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                             class="w-full p-3 border border-black/20 rounded-lg text-black focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                   </div>
 
                   <!-- Component Selection -->
@@ -379,7 +379,7 @@ async function showUpdateModal(requestId) {
                       
                       <div class="space-y-3">
                           <select id="componentSelect" name="componentId"
-                                  class="w-full p-3 bg-black/20 border border-black/20 rounded-lg text-black focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                                  class="w-full p-3 border border-black/20 rounded-lg text-black focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
                               <option value="">Komponent tanlang (ixtiyoriy)</option>
                               ${components.map((c) => 
                                 `<option value="${c._id}" data-price="${c.price}" data-max="${c.quantity}">
