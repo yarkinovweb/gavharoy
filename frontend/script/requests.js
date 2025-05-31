@@ -335,8 +335,8 @@ async function showUpdateModal(requestId) {
   try {
     const components = await api("/components")
     modalContainer.innerHTML = `
-      <div class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 px-4">
-          <div class="glass-card rounded-2xl p-6 w-full max-w-md shadow-2xl border border-black/20">
+      <div class="fixed inset-0 bg-black/20 backdrop-blur-sm flex items-center justify-center z-50 px-4">
+          <div class="glass-card bg-white rounded-2xl p-6 w-full max-w-md shadow-2xl border border-black/20">
               <div class="flex justify-between items-center mb-6">
                   <h2 class="text-xl font-bold text-black flex items-center gap-2">
                       <i class="fas fa-check-circle text-primary"></i>
