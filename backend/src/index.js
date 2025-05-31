@@ -9,7 +9,7 @@ import { getLocationStats, getRequestStats, getVisitorStats } from './handleRout
 
 const server = http.createServer(async (req, res) => {
   const { url, method } = req;
-  res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500'); 
+  res.setHeader('Access-Control-Allow-Origin', 'https://bora.robohouse.tech'); 
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
